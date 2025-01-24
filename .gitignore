@@ -1,0 +1,15 @@
+# Ignore logs, configs, and local settings
+*.log
+.env
+.DS_Store
+node_modules/
+
+# Ignore macOS system files 
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.apdisk
+
+# Ignore other directories
+temp/
+local_config/
