@@ -1,0 +1,418 @@
+/* General Body Styling */
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #202122;
+    overflow-x: hidden;
+}
+
+.nastaliq {
+    font-family: "Noto Nastaliq Urdu", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1;
+}
+
+.arabic {
+    font-family: 'Cairo', 'Amiri', 'Noto Naskh Arabic', sans-serif; /* Preferred Arabic fonts */
+    direction: rtl; /* Sets text direction to right-to-left */
+    color: #333; /* Text color */
+  }
+
+/* Position the tooltip container */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Style the tooltip */
+.tooltip {
+    font-family: "Helvetica", "Arial", sans-serif;
+    position: absolute;
+    background: #e3e5d1; /* Subtle background color */
+    border: 1px solid #a8a7a7; /* Light gray border */
+    color: #333; /* Dark text */
+    padding: 0.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    top: 100%; /* Position below the element */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 10;
+    font-weight: 400;
+    
+    margin-top: 10px;
+    text-align: left;
+
+    /* Hidden initially */
+    opacity: 0;
+    visibility: hidden;
+    line-height: 1.4;
+
+    /* Smooth fade-in */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition-delay: 0.3s; /* Delay before showing */
+
+    min-width: 400px;
+    word-wrap: break-word; /* Allow text to break within a word if necessary */
+  white-space: normal; /* Ensure text wraps to the next line */
+  overflow-wrap: break-word; /* Modern alternative for word-wrap */
+
+  font-size: 14px;
+}
+
+a {
+    color: #626b12;
+}
+
+/* Show the tooltip on hover */
+.tooltip-container:hover .tooltip {
+    opacity: 1; /* Fully visible */
+    visibility: visible; /* Make visible */
+    transition-delay: 0.3s; /* Delay matches initial transition */
+}
+  
+  .urdu-word {
+    color: #333; /* Dark text for good contrast */
+    margin-bottom: 8px; /* Space below the Urdu word */
+    display: inline-block;
+  }
+  
+  .pronunciation {
+    color: #555; /* Slightly lighter color for pronunciation */
+  }
+  
+  .definition {
+    color: #333; /* Consistent dark text */
+  }
+  
+  .details {
+    color: #555; /* Slightly lighter for details */
+    font-style: italic; /* Italicize details for subtle emphasis */
+  }
+
+  .citation {
+    color: #626b12;
+    text-decoration: none;
+    vertical-align: super;
+    font-size: smaller;
+    line-height: 1;
+  }
+
+  .citation:hover {
+    color: #8a961e;
+    text-decoration: underline;
+  }
+  
+  .footnote {
+    color: #626b12;
+    text-decoration: none;
+    vertical-align: super;
+    font-size: smaller;
+    line-height: 1;
+  }
+
+/* Header Styling */
+#header {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.site-title {
+    font-size: 4em;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+.site-title a {
+    color: #202122;
+    text-decoration: none;
+}
+
+/* Navigation Styling */
+#navigation {
+    background-color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+
+#navigation ul {
+    list-style: none;
+    padding: 0;
+    margin-right: -10px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#navigation li {
+    display: inline;
+    margin-right: 30px;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: #202122;
+    font-size: 1.3em;
+}
+
+#navigation a:hover {
+    text-decoration: underline;
+}
+
+.main-content-marker-hr {
+    border: none;          /* Remove default border */
+    height: 2px;           /* Set thickness */
+    background-color: #b5b4b4; /* Set color */
+    max-width: 130px;        /* Set maximum width */
+    margin: 0px auto;     /* Center the line horizontally */
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+#main-content {
+    max-width: 900px;
+    margin: 0px auto;
+    margin-top: -10px;
+    background-color: #f5f5f5;
+    border: 1px solid #818181;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h2, h3 {
+    color: #202122;
+    margin-top: 20px;
+}
+
+#main-content .intro {
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#main-content .main-content-text {
+    text-align: left;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.main-content-text h1 {
+    font-size: 20px;
+    margin-bottom: -8px;
+    margin-top: 30px;
+    border-bottom: 1px solid #737575;
+}
+
+.main-content-text h2 {
+    font-size: 18px;
+    margin-bottom: -8px;
+    margin-top: 30px;
+}
+
+.main-content-text h3 {
+    font-size: 16px;
+    margin-bottom: -8px;
+    margin-top: 30px;
+}
+
+.article-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.article-list li {
+    margin: 10px 0;
+}
+
+.article-list a {
+    color: #0645ad;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.article-list a:hover {
+    text-decoration: underline;
+}
+
+.article-list p {
+    margin: 5px 0 0 20px;
+    color: #5a5a5a;
+    font-size: 0.9em;
+}
+
+/* Footer Styling */
+#footer {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+    margin-top: 20px;
+    color: #b5b4b4;
+}
+
+/* Images and Videos Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border: 1px solid #d5d5d5;
+}
+
+.right-aligned {
+    float: right;
+    margin: 0 0 10px 10px;
+    max-width: 300px;
+}
+
+.left-aligned {
+    float: left;
+    margin: 0 10px 10px 0;
+    max-width: 300px;
+}
+
+.featured-articles {
+    text-align: center;
+    margin-top: 50px;
+}
+
+figcaption {
+    color: rgb(106, 106, 106);
+    font-style: italic;
+    text-align: center;
+    margin-top: -10px;
+    font-size: 14px;
+  }
+
+/* Slideshow Styling */
+.slideshow-container {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slideshow-container img {
+    width: 790px;
+    height: 450px;
+    object-fit: contain; /* Ensures the image scales proportionally */
+}
+
+.slides {
+    display: none;
+    width: 100%;
+}
+
+.active {
+    display: block;
+}
+
+.slideshow-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slideshow-buttons button {
+    background: rgba(124, 124, 124, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 20px;
+}
+
+.slideshow-buttons button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Thumbnails */
+.slideshow-thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.slideshow-thumbnails img {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.6;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.slideshow-thumbnails img:hover,
+.slideshow-thumbnails img.active {
+    opacity: 1;
+    border-color: #848e25;
+}
+
+.video-container {
+    position: relative;
+    width: 100%; /* Video takes up the full width of its parent */
+    max-width: 790px; /* Limit to a reasonable size */
+    margin: 20px auto; /* Center the video horizontally */
+    margin-top: 40px;
+    padding-top: 56.25%; /* Maintain a 16:9 aspect ratio */
+    background-color: #000; /* Optional: Add a black background */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Fill the width of the container */
+    height: 100%; /* Maintain aspect ratio */
+    border: none; /* Remove default border */
+}
+
+.article-end {
+    text-align: right;
+    max-width: 900px; /* Set maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    margin-top: -10px;
+    margin-bottom: -20px;
+    color: #a8a8a8;
+    margin-right: 5px;
+    font-style: italic;
+}
+
+.article-title {
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: 600; /* Optional: Make the title bold */
+}
+
+.article-date {
+    font-size: 14px; /* Adjust font size for the date */
+    margin-left: 10px;
+}
+
+
+
+/* Responsive Styling */
+@media (max-width: 328px) {
+    #navigation li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .right-aligned, .left-aligned {
+        float: none;
+        margin: 10px auto;
+    }
+}
